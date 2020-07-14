@@ -67,53 +67,75 @@ namespace Calss2
             }
         }
 
-
-        static void Main(string[] args)
-        {     
-            
-            //ハンズオン01～04
+        static double senkou(string a) {
             bool TorF = true;
-            double sin3 = 0;
-            double tai3 = 0;
-            int c=0;
-            
-            if (args.Length!=0 && args.Length!=1) {
-                //sin3 = double.Parse(args[0]);
-                TorF = double.TryParse(args[0], out sin3);
-                if (TorF==false) {
-                    Console.WriteLine("エラー。打ち直してください。");
-                    //sin3 = 0;
+            double tallweight;
+            TorF = double.TryParse(a, out tallweight);
+            if (TorF == false)
+            {
+                Console.WriteLine("エラー。打ち直してください。");
+            }
+                return tallweight;
+        }
+
+        static int SenkouHyouka(string[] args) {
+            bool TorF = false;
+            int c = 0;
+            double tall;
+            double weight;
+            if (args.Length >= 0) {
+                TorF = double.TryParse(args[0], out tall); 
+                if (TorF == false)
+                {
                     c += 1;
                 }
-                //tai3 = double.Parse(args[1]);
-                TorF = double.TryParse(args[1], out tai3);
-                if (TorF == false) {
-                    Console.WriteLine("エラー。打ち直してください。");
-                    //tai3 = 0;
-                    c += 2;
+                if (args.Length > 1)
+                {
+                    TorF = double.TryParse(args[1], out weight);
+                    if (TorF == false)
+                    {
+                        c += 2;
+                    }
                 }
-            }else { c += 3; }
+                else { c += 2; }
+                
+            }
+            else { c += 3; }
+            return c;
+        }
 
+        static void nyuuryokubunnki(int c,ref double tall, ref double weight,string[] args) { 
             switch (c) {
                 case 0:
+                    tall = senkou(args[0]);
+                    weight = senkou(args[1]);
                     break;
                 case 1:
-                    sin3 = nyuuryoku(1);
+                    tall = nyuuryoku(1);
+                    weight = senkou(args[1]);
                     break;
                 case 2:
-                    tai3 = nyuuryoku(0);
+                    tall = senkou(args[0]);
+                    weight = nyuuryoku(0);
                     break;
                 case 3:
                     for (int p = 1; p >= 0; p--)
                     {
                         if (p == 1) {
-                            sin3 = nyuuryoku(p);
+                            tall = nyuuryoku(p);
                         }else{
-                            tai3 = nyuuryoku(p);
+                            weight = nyuuryoku(p);
                         }
                     }
                     break;
             }
+        }
+
+        static void Main(string[] args)
+        {     
+            double sin3 = 0;
+            double tai3 = 0;
+            nyuuryokubunnki(SenkouHyouka(args),ref sin3,ref tai3,args);
 
             Console.WriteLine("BMIは"+BMI(sin3,tai3).ToString("F2")+"です。");
             BMIhyouka(BMI(sin3,tai3));
