@@ -84,7 +84,7 @@ namespace Calss2
             double tall;
             double weight;
             if (args.Length >= 0) {
-                TorF = double.TryParse(args[0], out tall); 
+                TorF = double.TryParse(args[0],out tall); 
                 if (TorF == false)
                 {
                     c += 1;
