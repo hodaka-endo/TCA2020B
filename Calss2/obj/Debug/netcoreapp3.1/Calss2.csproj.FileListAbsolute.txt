@@ -1,0 +1,22 @@
+C:\Users\student\Desktop\Calss2\bin\Debug\netcoreapp3.1\Calss2.exe
+C:\Users\student\Desktop\Calss2\bin\Debug\netcoreapp3.1\Calss2.deps.json
+C:\Users\student\Desktop\Calss2\bin\Debug\netcoreapp3.1\Calss2.runtimeconfig.json
+C:\Users\student\Desktop\Calss2\bin\Debug\netcoreapp3.1\Calss2.runtimeconfig.dev.json
+C:\Users\student\Desktop\Calss2\bin\Debug\netcoreapp3.1\Calss2.dll
+C:\Users\student\Desktop\Calss2\bin\Debug\netcoreapp3.1\Calss2.pdb
+C:\Users\student\Desktop\Calss2\obj\Debug\netcoreapp3.1\Calss2.AssemblyInfoInputs.cache
+C:\Users\student\Desktop\Calss2\obj\Debug\netcoreapp3.1\Calss2.AssemblyInfo.cs
+C:\Users\student\Desktop\Calss2\obj\Debug\netcoreapp3.1\Calss2.dll
+C:\Users\student\Desktop\Calss2\obj\Debug\netcoreapp3.1\Calss2.pdb
+C:\Users\student\Desktop\Calss2\obj\Debug\netcoreapp3.1\Calss2.csprojAssemblyReference.cache
+F:\SUP関連\C# 授業\Calss2\bin\Debug\netcoreapp3.1\Calss2.exe
+F:\SUP関連\C# 授業\Calss2\bin\Debug\netcoreapp3.1\Calss2.deps.json
+F:\SUP関連\C# 授業\Calss2\bin\Debug\netcoreapp3.1\Calss2.runtimeconfig.json
+F:\SUP関連\C# 授業\Calss2\bin\Debug\netcoreapp3.1\Calss2.runtimeconfig.dev.json
+F:\SUP関連\C# 授業\Calss2\bin\Debug\netcoreapp3.1\Calss2.dll
+F:\SUP関連\C# 授業\Calss2\bin\Debug\netcoreapp3.1\Calss2.pdb
+F:\SUP関連\C# 授業\Calss2\obj\Debug\netcoreapp3.1\Calss2.AssemblyInfoInputs.cache
+F:\SUP関連\C# 授業\Calss2\obj\Debug\netcoreapp3.1\Calss2.AssemblyInfo.cs
+F:\SUP関連\C# 授業\Calss2\obj\Debug\netcoreapp3.1\Calss2.dll
+F:\SUP関連\C# 授業\Calss2\obj\Debug\netcoreapp3.1\Calss2.pdb
+F:\SUP関連\C# 授業\Calss2\obj\Debug\netcoreapp3.1\Calss2.csprojAssemblyReference.cache
