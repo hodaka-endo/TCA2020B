@@ -81,8 +81,8 @@ namespace Calss2
         static int SenkouHyouka(string[] args) {
             bool TorF = false;
             int c = 0;
-            double tall;
-            double weight;
+            double tall=0;
+            double weight=0;
             if (args.Length >= 0) {
                 TorF = double.TryParse(args[0],out tall); 
                 if (TorF == false)
@@ -91,7 +91,7 @@ namespace Calss2
                 }
                 if (args.Length > 1)
                 {
-                    TorF = double.TryParse(args[1], out weight);
+                    TorF = double.TryParse(args[1],out weight);
                     if (TorF == false)
                     {
                         c += 2;
